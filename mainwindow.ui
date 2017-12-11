@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>613</width>
+    <height>557</height>
+   </rect>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>100</width>
+    <height>100</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>100</width>
+    <height>100</height>
+   </size>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>PSP</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/program_icon/image/app.png</normaloff>:/program_icon/image/app.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>613</width>
+     <height>500</height>
+    </size>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QGraphicsView" name="ImageGraphicsView">
+      <property name="cursor" stdset="0">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>613</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionopen"/>
+    <addaction name="actionsave"/>
+    <addaction name="actionsave_as"/>
+    <addaction name="actionexit"/>
+   </widget>
+   <widget class="QMenu" name="menuProcess">
+    <property name="title">
+     <string>Process</string>
+    </property>
+    <addaction name="actionSketch"/>
+    <addaction name="actionCartoon"/>
+    <addaction name="actionEvil"/>
+   </widget>
+   <widget class="QMenu" name="menuSetting">
+    <property name="title">
+     <string>Setting</string>
+    </property>
+    <widget class="QMenu" name="menuLanguage">
+     <property name="title">
+      <string>Language</string>
+     </property>
+     <addaction name="actionEnglish"/>
+     <addaction name="actionChinese"/>
+    </widget>
+    <addaction name="menuLanguage"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuProcess"/>
+   <addaction name="menuSetting"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionopen"/>
+   <addaction name="actionsave"/>
+   <addaction name="actionsave_as"/>
+   <addaction name="actionAbout"/>
+  </widget>
+  <action name="actionopen">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/menu_icon/image/file.png</normaloff>:/menu_icon/image/file.png</iconset>
+   </property>
+   <property name="text">
+    <string>open        Ctrl+O</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/menu_icon/image/save.png</normaloff>:/menu_icon/image/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>save        Ctrl+S</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionsave_as">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/menu_icon/image/save as.png</normaloff>:/menu_icon/image/save as.png</iconset>
+   </property>
+   <property name="text">
+    <string>save as    Ctrl+Alt+S</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+S</string>
+   </property>
+  </action>
+  <action name="actionexit">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/menu_icon/image/exit.png</normaloff>:/menu_icon/image/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>exit          Ctrl+E</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionSketch">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/menu_icon/image/Sketch.png</normaloff>:/menu_icon/image/Sketch.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sketch</string>
+   </property>
+  </action>
+  <action name="actionCartoon">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/menu_icon/image/cartoon.png</normaloff>:/menu_icon/image/cartoon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cartoon</string>
+   </property>
+  </action>
+  <action name="actionEvil">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/menu_icon/image/evil.png</normaloff>:/menu_icon/image/evil.png</iconset>
+   </property>
+   <property name="text">
+    <string>Evil</string>
+   </property>
+  </action>
+  <action name="actionEnglish">
+   <property name="text">
+    <string>English</string>
+   </property>
+  </action>
+  <action name="actionChinese">
+   <property name="text">
+    <string>Chinese</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/menu_icon/image/contacts.png</normaloff>:/menu_icon/image/contacts.png</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

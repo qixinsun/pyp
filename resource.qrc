@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/program_icon">
+        <file>image/app.png</file>
+    </qresource>
+    <qresource prefix="/menu_icon">
+        <file>image/file.png</file>
+        <file>image/exit.png</file>
+        <file>image/save as.png</file>
+        <file>image/save.png</file>
+        <file>image/cartoon.png</file>
+        <file>image/evil.png</file>
+        <file>image/Sketch.png</file>
+        <file>image/contacts.png</file>
+    </qresource>
+</RCC>
